@@ -1,1 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="header"><h2>Login</h2></div>
+<div class="container" style="max-width:400px">
+<h2>Login</h2>
+<input type="email" id="login_email" placeholder="Email">
+<input type="password" id="login_password" placeholder="Password">
+<button class="btn" onclick="login()">Login</button>
 
+<h2 style="margin-top:20px">Register</h2>
+<input type="text" id="reg_name" placeholder="Name">
+<input type="email" id="reg_email" placeholder="Email">
+<input type="password" id="reg_password" placeholder="Password">
+<select id="reg_role"><option value="User">User</option><option value="Admin">Admin</option></select>
+<button class="btn" onclick="register()">Register</button>
+</div>
+<script src="script.js"></script></body></html>
