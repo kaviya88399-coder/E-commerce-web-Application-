@@ -1,1 +1,17 @@
+html>
+<head><title>Admin</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadAdminProducts()">
+<div class="header"><h2>Admin Panel</h2>
+<div><a href="products.html">Shop</a><a href="#" onclick="logout()">Logout</a></div></div>
+<div class="container">
+<h1>Add Product</h1>
+<input type="text" id="p_name" placeholder="Product Name">
+<input type="number" id="p_price" placeholder="Price">
+<input type="text" id="p_desc" placeholder="Description">
+<button class="btn" onclick="addProduct()">Add Product</button>
 
+<h1 style="margin-top:20px">All Products</h1>
+<table><thead><tr><th>Name</th><th>Price</th><th>Action</th></tr></thead>
+<tbody id="adminProducts"></tbody></table>
+</div>
+<script src="script.js"></script></body></html>
