@@ -1,1 +1,15 @@
 
+<!DOCTYPE html>
+<html>
+<head><title>Cart</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadCart()">
+<div class="header"><h2>Cart</h2>
+<div><a href="products.html">Products</a><a href="checkout.html">Checkout</a></div></div>
+<div class="container">
+<h1>Your Cart</h1>
+<table><thead><tr><th>Product</th><th>Price</th><th>Action</th></tr></thead>
+<tbody id="cartItems"></tbody></table>
+<h3 id="total"></h3>
+<button class="btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+</div>
+<script src="script.js"></script></body></html>
