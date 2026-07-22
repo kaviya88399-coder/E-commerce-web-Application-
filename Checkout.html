@@ -1,1 +1,14 @@
-
+DOCTYPE html>
+<html>
+<head><title>Checkout</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadCart()">
+<div class="header"><h2>Checkout</h2></div>
+<div class="container" style="max-width:500px">
+<h1>Order Details</h1>
+<input type="text" placeholder="Full Name">
+<input type="text" placeholder="Address">
+<input type="text" placeholder="Phone">
+<h3 id="total"></h3>
+<button class="btn" onclick="placeOrder()">Place Order</button>
+</div>
+<script src="script.js"></script></body></html>
